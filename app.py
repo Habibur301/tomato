@@ -33,7 +33,7 @@ def classify_image(uploaded_file):
 # Tampilan utama aplikasi
 def main():
     st.markdown("<h1 style='text-align: center; color: green;'>🍅 Klasifikasi Kematangan Tomat</h1>", unsafe_allow_html=True)
-    st.markdown("Upload gambar tomat untuk mengetahui statusnya: **Ripe**, **Unripe**, atau **Reject**.")
+    st.markdown("Upload gambar tomat untuk mengetahui statusnya: **(Ripe)Matang**, **(Unripe)Mentah**, atau **(Reject)Rusak**.")
     
     uploaded_file = st.file_uploader("Unggah Gambar Tomat", type=["jpg", "jpeg", "png"])
     if uploaded_file is not None:
